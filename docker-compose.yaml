@@ -12,11 +12,11 @@ services:
       - flask
 
   flask:
-    # image: "magomedovim/flask:1.0"
+    image: "magomedovim/flask:1.0"
     build: .
     container_name: flask
     environment:
-      # - FLASK_DEBUG=1
+      - FLASK_DEBUG=1
       - SQL_DATABASE_TYPE=postgres
       - SQL_USER=flask_user
       - SQL_PASSWORD=Password!
